@@ -321,7 +321,7 @@ export default class AppIntro extends Component {
     const pageView = (
       <View style={[this.styles.slide, { backgroundColor }]} showsPagination={false} key={index}>
         <Animated.View style={[this.styles.header, ...AnimatedStyle1.transform]}>
-          <Image style={imgStyle} source={imgSource} />
+          <Image style={imgStyle} source={imgSource} resizeMode='contain' />
         </Animated.View>
         <View style={this.styles.info}>
           <Animated.View style={AnimatedStyle2.transform}>
